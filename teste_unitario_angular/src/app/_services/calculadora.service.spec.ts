@@ -32,5 +32,11 @@ describe('CalculadoraService', () => {
     expect(service).toBeTruthy();
     const result = service.calcular(5, 8, 'multiplicar');
     expect(result).toBe(40, 'O resultado deve ser igual a 40');
+ })
+
+ it('Deve dividir dois números', () => {
+    expect(service).toBeTruthy();
+    const result = service.calcular(20, 4, 'dividir');
+    expect(result).toBe(5, 'O resultado deve ser igual a 5');
   })
 });
