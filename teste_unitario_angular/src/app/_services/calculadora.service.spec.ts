@@ -12,13 +12,13 @@ describe('CalculadoraService', () => {
     service = TestBed.inject(CalculadoraService);
   });
 
-  it('should be created', () => {
-  expect(service).toBeTruthy();
-  });
+  // it('should be created', () => {
+  // expect(service).toBeTruthy();
+  // });
 
-  // it('deve somar corretamente, dois números', () => {
-  //   expect(service).toBeTruthy();
-  //   const result = service.calcular(5, 8, 'soma');
-  //   expect(result).toBe(13, 'O resultado deve ser igual a 13');
-  // })
+  it('Deve somar dois números', () => {
+    expect(service).toBeTruthy();
+    const result = service.calcular(5, 8, 'soma');
+    expect(result).toBe(13, 'O resultado deve ser igual a 13');
+ })
 });
