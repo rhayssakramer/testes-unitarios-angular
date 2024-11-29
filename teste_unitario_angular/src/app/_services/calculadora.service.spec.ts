@@ -6,11 +6,19 @@ describe('CalculadoraService', () => {
   let service: CalculadoraService;
 
   beforeEach(() => {
-    TestBed.configureTestingModule({});
+    TestBed.configureTestingModule({
+      providers: [CalculadoraService]
+    });
     service = TestBed.inject(CalculadoraService);
   });
 
   it('should be created', () => {
-    expect(service).toBeTruthy();
+  expect(service).toBeTruthy();
   });
+
+  // it('deve somar corretamente, dois números', () => {
+  //   expect(service).toBeTruthy();
+  //   const result = service.calcular(5, 8, 'soma');
+  //   expect(result).toBe(13, 'O resultado deve ser igual a 13');
+  // })
 });
